@@ -1,7 +1,82 @@
+.window {
+  background-image: url('../img/vendor.gif');
+  background-size: 70% 80%;
+  background-repeat: no-repeat;
+  background-position: 30% 20%;
+  width: 100%;
+  margin-left: 20%;
+}
+
+
+.window img {
+  width: 100%;
+}
+
+.prompt {
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  background-image: url('../img/bubble.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  z-index: ;
+
+}
+
+.prompt h3 {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  padding-right: 20%;
+  font-family: 'Nosifer', cursive;
+
+}
+
+.selectors {
+  position: relative;
+  margin-top: 26%;
+  margin-bottom: 16%;
+  padding-left: 5%;
+  text-align: center;
+  z-index: 100;
+}
+
+option {
+  color: rgba(255, 255, 255, 0);
+}
+
+
+.movie, .time, .btn, .movietime {
+  display: none;
+}
+
+.movietime {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+
+.result {
+  display: inline-block;
+}
+
+.bouncer {
+  display: inline-block;
+}
+
 .ticket {
   text-align: center;
   background-image: url('../img/ticket.gif');
   background-size: cover;
   height: 200px;
   width: 400px;
+}
+
+.ticket p {
+  font-size: 25px;
+  font-family: 'VT323', monospace;
+  font-weight: bolder;
+  padding-top: 32px;
 }

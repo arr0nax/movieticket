@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
@@ -9,29 +11,38 @@
     <title></title>
   </head>
   <body>
-    <div class="row">
+    <div class="window">
+      <img src="img/window.png" alt="" />
 
-      <form class="selectors col-sm-5" action="index.html" method="post">
-        <select class="age form-control">
+    </div>
+    <div class="prompt">
+      <h3><span class="speech">HEY. HOW OLD ARE YOU?</span></h3>
+      <form class="selectors" action="index.html" method="post">
+        <select class="age">
+          <option value="option">Choose One</option>
           <option value="kid">18 and younger</option>
           <option value="adult">18 - 55</option>
           <option value="senior">55+</option>
         </select>
-        <select class="movie form-control">
-          <option value="action">Revenge of Rom</option>
-          <option value="adventure">Quest for Com: Rom's Adventure</option>
-          <option value="romedy">FireFight</option>
+        <select class="movie">
+          <option value="option">Choose One</option>
+          <option value="Revenge of Rom">Revenge of Rom</option>
+          <option value="Quest for Com">Quest for Com: Rom's Adventure</option>
+          <option value="FireFight">FireFight</option>
         </select>
-        <select class="time form-control">
+        <select class="time">
+          <option value="option">Choose One</option>
           <option value="matinee">4:30</option>
           <option value="evening">7:30</option>
-          <option value="latenight">9:30</option>
+          <option value="late night">9:30</option>
         </select>
-        <button type="sumbit" class='btn' name="button">CALCULATE</button>
+        <button type="sumbit" class='btn' name="button">SOUNDS GOOD...</button>
       </form>
-      <div class="result col-sm-7">
 
-      </div>
+    </div>
+    <div class="movietime">
+      <img class="bouncer" src="img/bouncer.gif" alt="" />
+      <div class="result"></div>
     </div>
   </body>
 </html>
