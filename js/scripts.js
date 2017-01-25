@@ -175,7 +175,7 @@ $(function(){
   $('.selectors').submit(function(event) {
     event.preventDefault();
 
-    $('.btn').hide();
+    $('.selectors button').hide();
     var age = $('.age').val();
     var movie = $('.movie').val();
     var time = $('.time').val();
