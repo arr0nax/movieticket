@@ -13,10 +13,10 @@
   <body>
     <div class="window">
       <img src="img/window.png" alt="" />
-
+      <div class="bankButton">I'M HURR FOR THE BANK</div>
     </div>
     <div class="prompt">
-      <h3><span class="speech">HEY. HOW OLD ARE YOU?</span></h3>
+      <h2><span class="speech">HEY. HOW OLD ARE YOU?</span></h2>
       <form class="selectors" action="index.html" method="post">
         <select class="age">
           <option value="option">Choose One</option>
@@ -38,8 +38,35 @@
         </select>
         <button type="sumbit" class='btn' name="button">SOUNDS GOOD...</button>
       </form>
-
     </div>
+    <form id="bankForm">
+      <ul id="existingAccounts"></ul>
+      <div id="accountPage">
+        <h2><span id="accountName"></span></h2>
+        <h3>Balance: <span id="accountBalance"></span> Flesh</h3>
+        <label for="amount">Enter an amount: </label>
+        <input id="amount" type="text"><br>
+        <button id="withdraw" class="btn btn-success">Withdraw Flesh</button>
+        <button id="deposit" class="btn btn-danger">Deposit Flesh</button>
+        <button id="returnToMain" class="btn btn-primary">Return Home</button>
+      </div>
+      <button id="newAccountBtn">New Account</button>
+      <div class="newAccount">
+        <h2>Open New Account: <span id="balance"></span></h2>
+        <div class="form-group">
+          <label for="name">Name: </label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="initialDeposit">Amount to deposit: </label>
+          <input id="initialDeposit" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Finished</button>
+      </div>
+      <div class="">
+        <ul id="accountList"></ul>
+      </div>
+    </form>
     <div class="movietime">
       <img class="bouncer" src="img/bouncer.gif" alt="" />
       <div class="result"></div>
